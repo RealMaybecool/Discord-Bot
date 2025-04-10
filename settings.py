@@ -3,11 +3,11 @@ prefix = '.'
 email = ''
 password = ''
 login_type = True  # <- True = token login, False = email login
-name = "SiDzej's Server"
+name = Maybecool Bot"
 on_ready = 'is ready'
 Welcome_message = 'Welcome to the ' + name + ', '
 Welcome_message2 = " I've assigned you a role."
-base_role_name = 'Zarejestrowany'
+base_role_name = 'Rizzler'
 permission_error = "You don't have enough permission to do this."
 kick_message = 'User'
 kick_message2 = "has been kicked from the "
