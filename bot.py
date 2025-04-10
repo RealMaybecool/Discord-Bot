@@ -34,9 +34,13 @@ class Ban:
       async def ban(self, ctx, member: discord.Member = none):
         await self.bot.send.messege(member, settings.ban_direct)
         await self.botban(member)
-        await sekf,bot.say(settings.ban_message + member.mention + settings.ban_messege2 + settings.name)
+        await self.bot.say(settings.ban_message + member.mention + settings.ban_messege2 + settings.name)
 
 @ban.error 
 async def ban_error(self, error, ctx):
     if isinstance(error, CheckFailure):
-        await self.bot.send_message)
+        await self.bot.send_message(ctx.messege.channel, settings.permission_error)
+
+    def setup(bot):
+        bot.add_cog(Ban(bot))
+            
